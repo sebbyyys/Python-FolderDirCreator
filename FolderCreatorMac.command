@@ -1,10 +1,9 @@
-
-
+#!/usr/local/bin/python3
 import os
 import os.path
 import time
 
-illegal = '<>:"/\|?* '
+illegal = '<>:"/\|?*'
 yesInputs = ["yes", "Yes", "y", "Y"," yes","yes "]
 name = "yes"
 
@@ -46,7 +45,7 @@ while name in yesInputs:
                 listnames = ''
                 for x in finalList:
                     listnames += ' ' + x
-                print(f"\nSuccessfully created folders{listnames[0:-1]}and {listnames[-1:]}")
+                    print(f"\nSuccessfully created folders{listnames[0:-1]}and {listnames[-1:]}")
                 time.sleep(5) 
                 
         except MemoryError:
